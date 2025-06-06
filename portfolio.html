@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Wolf Studio - Premium Media Production</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">
+                <img src="logo.png" alt="White Wolf Studio">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Quote</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section (Same structure as index.html) -->
+    <section id="portfolio-hero" class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-professional-video-production-setup-with-multiple-cameras-50645-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="word">Our</span>
+                <span class="word">Creative</span>
+                <span class="word">Portfolio</span>
+            </h1>
+            <p class="hero-subtitle">Discover the stories we've brought to life through exceptional visual storytelling and cinematic excellence</p>
+            <div class="hero-cta">
+                <a href="#portfolio-showcase" class="btn-primary">Explore Work</a>
+                <a href="index.html#contact" class="btn-secondary">Hire Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter Section -->
+    <section id="portfolio-filter-section" class="portfolio-filter-wrapper">
+        <div class="container">
+            <div class="portfolio-filter-content">
+                <h2 class="portfolio-filter-title">Browse Our Work</h2>
+                <div class="portfolio-filter-tabs">
+                    <button class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+                    <button class="portfolio-filter-btn" data-filter="commercial">Commercials</button>
+                    <button class="portfolio-filter-btn" data-filter="corporate">Corporate</button>
+                    <button class="portfolio-filter-btn" data-filter="documentary">Documentaries</button>
+                    <button class="portfolio-filter-btn" data-filter="music">Music Videos</button>
+                    <button class="portfolio-filter-btn" data-filter="photography">Photography</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Portfolio Showcase -->
+    <section id="portfolio-showcase" class="portfolio-showcase-section">
+        <div class="container">
+            <div class="portfolio-showcase-grid">
+                <!-- Commercial Projects -->
+                <div class="portfolio-showcase-item commercial" data-category="commercial">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #ffdd00 0%, #ff6b35 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('commercial1')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Tech Brand Campaign</h3>
+                        <p class="portfolio-showcase-category">Commercial</p>
+                        <p class="portfolio-showcase-description">A dynamic commercial showcasing cutting-edge technology with cinematic visuals and compelling storytelling.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">4K Video</span>
+                            <span class="portfolio-showcase-tag">Color Grading</span>
+                            <span class="portfolio-showcase-tag">Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-showcase-item commercial" data-category="commercial">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('commercial2')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Fashion Forward</h3>
+                        <p class="portfolio-showcase-category">Commercial</p>
+                        <p class="portfolio-showcase-description">Luxury fashion commercial featuring elegant cinematography and sophisticated post-production.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Fashion</span>
+                            <span class="portfolio-showcase-tag">Luxury</span>
+                            <span class="portfolio-showcase-tag">Cinematography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Projects -->
+                <div class="portfolio-showcase-item corporate" data-category="corporate">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('corporate1')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Corporate Vision 2025</h3>
+                        <p class="portfolio-showcase-category">Corporate</p>
+                        <p class="portfolio-showcase-description">Professional corporate video highlighting company values and future vision with executive interviews.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Corporate</span>
+                            <span class="portfolio-showcase-tag">Interviews</span>
+                            <span class="portfolio-showcase-tag">Professional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-showcase-item corporate" data-category="corporate">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('corporate2')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Annual Report Video</h3>
+                        <p class="portfolio-showcase-category">Corporate</p>
+                        <p class="portfolio-showcase-description">Comprehensive annual report presentation with data visualization and executive messaging.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Data Viz</span>
+                            <span class="portfolio-showcase-tag">Annual Report</span>
+                            <span class="portfolio-showcase-tag">Animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documentary Projects -->
+                <div class="portfolio-showcase-item documentary" data-category="documentary">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('documentary1')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Streets of Mumbai</h3>
+                        <p class="portfolio-showcase-category">Documentary</p>
+                        <p class="portfolio-showcase-description">An intimate documentary exploring the diverse stories and cultures of Mumbai's vibrant streets.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Documentary</span>
+                            <span class="portfolio-showcase-tag">Culture</span>
+                            <span class="portfolio-showcase-tag">Social Impact</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-showcase-item documentary" data-category="documentary">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('documentary2')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Ocean Guardians</h3>
+                        <p class="portfolio-showcase-category">Documentary</p>
+                        <p class="portfolio-showcase-description">Environmental documentary showcasing marine conservation efforts along India's coastline.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Environment</span>
+                            <span class="portfolio-showcase-tag">Conservation</span>
+                            <span class="portfolio-showcase-tag">Nature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Video Projects -->
+                <div class="portfolio-showcase-item music" data-category="music">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('music1')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Rhythm of the City</h3>
+                        <p class="portfolio-showcase-category">Music Video</p>
+                        <p class="portfolio-showcase-description">High-energy music video featuring dynamic choreography and vibrant urban cinematography.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Music Video</span>
+                            <span class="portfolio-showcase-tag">Dance</span>
+                            <span class="portfolio-showcase-tag">Urban</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-showcase-item music" data-category="music">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('music2')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Soulful Melodies</h3>
+                        <p class="portfolio-showcase-category">Music Video</p>
+                        <p class="portfolio-showcase-description">Artistic music video with creative visual effects and emotional storytelling.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Artistic</span>
+                            <span class="portfolio-showcase-tag">Visual Effects</span>
+                            <span class="portfolio-showcase-tag">Emotional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography Projects -->
+                <div class="portfolio-showcase-item photography" data-category="photography">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('photo1')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Corporate Portraits</h3>
+                        <p class="portfolio-showcase-category">Photography</p>
+                        <p class="portfolio-showcase-description">Professional corporate headshots and team photography with studio lighting.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Portraits</span>
+                            <span class="portfolio-showcase-tag">Studio</span>
+                            <span class="portfolio-showcase-tag">Professional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-showcase-item photography" data-category="photography">
+                    <div class="portfolio-showcase-image">
+                        <div class="portfolio-showcase-placeholder" style="background: linear-gradient(135deg, #fad0c4 0%, #ffd1ff 100%);">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="portfolio-showcase-overlay">
+                            <button class="portfolio-showcase-view-btn" onclick="openPortfolioModal('photo2')">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-showcase-info">
+                        <h3>Product Showcase</h3>
+                        <p class="portfolio-showcase-category">Photography</p>
+                        <p class="portfolio-showcase-description">Commercial product photography with creative lighting and composition.</p>
+                        <div class="portfolio-showcase-tags">
+                            <span class="portfolio-showcase-tag">Product</span>
+                            <span class="portfolio-showcase-tag">Commercial</span>
+                            <span class="portfolio-showcase-tag">Creative</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Stats Section -->
+    <section id="portfolio-stats-section" class="portfolio-stats-wrapper">
+        <div class="container">
+            <div class="portfolio-stats-content">
+                <h2 class="portfolio-stats-title">Our Impact</h2>
+                <div class="portfolio-stats-grid">
+                    <div class="portfolio-stats-item">
+                        <div class="portfolio-stats-number">150+</div>
+                        <div class="portfolio-stats-label">Videos Produced</div>
+                    </div>
+                    <div class="portfolio-stats-item">
+                        <div class="portfolio-stats-number">50M+</div>
+                        <div class="portfolio-stats-label">Total Views</div>
+                    </div>
+                    <div class="portfolio-stats-item">
+                        <div class="portfolio-stats-number">25+</div>
+                        <div class="portfolio-stats-label">Awards Won</div>
+                    </div>
+                    <div class="portfolio-stats-item">
+                        <div class="portfolio-stats-number">100%</div>
+                        <div class="portfolio-stats-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section - Add this after Portfolio Stats Section -->
+<section id="portfolio-clients-section" class="portfolio-clients-wrapper">
+    <div class="container">
+        <div class="portfolio-clients-content">
+            <h2 class="portfolio-clients-title">Trusted by Industry Leaders</h2>
+            <p class="portfolio-clients-subtitle">We've had the privilege of working with amazing brands and organizations</p>
+            
+            <div class="portfolio-clients-grid">
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>TechCorp</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>TechCorp Industries</h4>
+                        <p>Technology & Innovation</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span>LuxeFash</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>Luxury Fashion House</h4>
+                        <p>Fashion & Lifestyle</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span>GreenCorp</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>GreenCorp Solutions</h4>
+                        <p>Environmental & Sustainability</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span>MediaMax</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>MediaMax Entertainment</h4>
+                        <p>Entertainment & Media</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span>FinanceFlow</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>FinanceFlow Bank</h4>
+                        <p>Banking & Finance</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span>EduTech</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>EduTech Academy</h4>
+                        <p>Education & Learning</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <span>HealthCare+</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>HealthCare Plus</h4>
+                        <p>Healthcare & Wellness</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-client-item">
+                    <div class="portfolio-client-logo">
+                        <div class="portfolio-client-placeholder" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                            <span>StartupHub</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-client-info">
+                        <h4>StartupHub Ventures</h4>
+                        <p>Startup & Innovation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-clients-testimonial">
+                <div class="testimonial-content">
+                    <blockquote>
+                        "White Wolf Studio transformed our brand story into a compelling visual narrative. Their attention to detail and creative vision exceeded our expectations."
+                    </blockquote>
+                    <cite>
+                        <strong>Rajesh Kumar</strong>
+                        <span>CEO, TechCorp Industries</span>
+                    </cite>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="portfolio-modal">
+        <div class="portfolio-modal-content">
+            <span class="portfolio-modal-close">&times;</span>
+            <div class="portfolio-modal-body">
+                <div class="portfolio-modal-video">
+                    <div class="portfolio-modal-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Video Preview</p>
+                    </div>
+                </div>
+                <div class="portfolio-modal-info">
+                    <h3 id="modal-title">Project Title</h3>
+                    <p id="modal-category">Category</p>
+                    <p id="modal-description">Project description will appear here...</p>
+                    <div id="modal-tags" class="portfolio-modal-tags"></div>
+                    <div class="portfolio-modal-details">
+                        <div class="portfolio-modal-detail">
+                            <strong>Client:</strong> <span id="modal-client">Client Name</span>
+                        </div>
+                        <div class="portfolio-modal-detail">
+                            <strong>Duration:</strong> <span id="modal-duration">Project Duration</span>
+                        </div>
+                        <div class="portfolio-modal-detail">
+                            <strong>Services:</strong> <span id="modal-services">Services Provided</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section id="portfolio-cta-section" class="portfolio-cta-wrapper">
+        <div class="container">
+            <div class="portfolio-cta-content">
+                <h2 class="portfolio-cta-title">Ready to Create Your Story?</h2>
+                <p class="portfolio-cta-description">Let's collaborate on your next project and bring your vision to life with our creative expertise.</p>
+                <div class="portfolio-cta-buttons">
+                    <a href="index.html#contact" class="btn-primary">Start Your Project</a>
+                    <a href="index.html#services" class="btn-secondary">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="White Wolf Studio">
+                    </div>
+                    <p class="footer-description">Mumbai's premier media production house, crafting compelling visual narratives with cinematic excellence.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="#portfolio-showcase">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Video Production</a></li>
+                        <li><a href="index.html#services">Film Making</a></li>
+                        <li><a href="index.html#services">Post Production</a></li>
+                        <li><a href="index.html#services">Photography</a></li>
+                        <li><a href="index.html#services">Brand Content</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> hello@whitewolfstudio.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 White Wolf Studio. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect (same as index.html)
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Portfolio Filter Functionality
+        const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-showcase-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Portfolio Modal Functionality
+        const modal = document.getElementById('portfolio-modal');
+        const modalClose = document.querySelector('.portfolio-modal-close');
+
+        function openPortfolioModal(projectId) {
+            // Sample project data
+            const projects = {
+                commercial1: {
+                    title: 'Tech Brand Campaign',
+                    category: 'Commercial',
+                    description: 'A dynamic commercial showcasing cutting-edge technology with cinematic visuals and compelling storytelling. This project involved complex visual effects, professional voice-over, and multi-location shooting.',
+                    client: 'TechCorp Industries',
+                    duration: '3 months',
+                    services: 'Video Production, Post-Production, VFX'
+                },
+                commercial2: {
+                    title: 'Fashion Forward',
+                    category: 'Commercial',
+                    description: 'Luxury fashion commercial featuring elegant cinematography and sophisticated post-production. Shot in high-end locations with professional models and creative lighting setups.',
+                    client: 'Luxury Fashion House',
+                    duration: '2 months',
+                    services: 'Cinematography, Color Grading, Sound Design'
+                },
+                // Add more project data as needed
+            };
+
+            const project = projects[projectId] || projects.commercial1;
+
+            document.getElementById('modal-title').textContent = project.title;
+            document.getElementById('modal-category').textContent = project.category;
+            document.getElementById('modal-description').textContent = project.description;
+            document.getElementById('modal-client').textContent = project.client;
+            document.getElementById('modal-duration').textContent = project.duration;
+            document.getElementById('modal-services').textContent = project.services;
+
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        modalClose.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animate hero title words
+        const words = document.querySelectorAll('.hero-title .word');
+        words.forEach((word, index) => {
+            word.style.animationDelay = `${index * 0.3}s`;
+        });
+
+        // Portfolio stats counter animation
+        function animatePortfolioCounters() {
+            const counters = document.querySelectorAll('.portfolio-stats-number');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        const displayValue = Math.floor(current);
+                        if (counter.textContent.includes('M')) {
+                            counter.textContent = displayValue + 'M+';
+                        } else if (counter.textContent.includes('%')) {
+                            counter.textContent = displayValue + '%';
+                        } else {
+                            counter.textContent = displayValue + '+';
+                        }
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = counter.textContent;
+                    }
+                };
+                
+                const counterObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCounter();
+                            counterObserver.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                counterObserver.observe(counter);
+            });
+        }
+
+        // Initialize counter animation
+        animatePortfolioCounters();
+    </script>
+</body>
+</html>
